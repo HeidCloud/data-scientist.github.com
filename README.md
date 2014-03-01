@@ -11,34 +11,34 @@ For all usage and documentation please see: <http://jekyllbootstrap.com>
 My setup here is Win 7 32-bit.
 Requirement:
   * Make sure you have installed python and added it in your environmental path.
-  * Install Ruby, here comes the link.([Download](http://rubyinstaller.org/downloads/))
-Note: Ruby 1.9.3 is recommended (For example, I install it in `D:/ruby`)
+  * Install Ruby, here comes the link.([Download](http://rubyinstaller.org/downloads/))   
+     **Note:** Ruby 1.9.3 is recommended (For example, I install it in `D:/ruby`)
   * Also download Development Kit from the link above.
 
 1. First go into the directory where you installed the ruby. Mine is `E:\cloud\MLTeam`.
-   And then run the following command:
-            `ruby dk.rb init`
+   And then run the following command:   
+      `ruby dk.rb init`   
    Then you can see the `config.yml` file.
 
 2. Open `config.yml` and modify `C:/Ruby193` to your ruby installation path. (e.g. mine is `D:/Ruby193`)
 
-3. Then run this command to install to devkit.
-	`ruby dk.rb install`
-	Note: if the system says you should install RubyGems and you realized that you have installed it. Then you can run the following command
-		`gem install rubygems-update`
-		`update_rubygems`
+3. Then run this command to install to devkit.     
+	`ruby dk.rb install`   
+ 	**Note:** if the system says you should install RubyGems and you realized that you have installed it. Then you can run the following command   
+		`gem install rubygems-update`    
+		`update_rubygems`   
 	After that, you can run `ruby dk.rb install` again.
 
-4. Then you need to install jekyll now.
+4. Then you need to install jekyll now.   
 	`gem install jekyll --version "=1.4.2"`
 
 5. Because I didn't install Pygments in this guide. I assume you also don't need to use it. But if you want to install it. Just follow Step 7 and 8 [here](http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html).
 
-6. Start Jekyll
-	`jekyll new myblog`
-	 `cd myblog`
-     	`jekyll serve`
-  Then check [http://localhost:4000](http://localhost:4000)
+6. Start Jekyll    
+	`jekyll new myblog`   
+	`cd myblog`    
+	`jekyll serve`   
+   Then check [http://localhost:4000](http://localhost:4000)
 
 ## Version
 

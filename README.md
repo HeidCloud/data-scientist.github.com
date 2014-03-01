@@ -35,9 +35,9 @@ Note: Ruby 1.9.3 is recommended (For example, I install it in `D:/ruby`)
 5. Because I didn't install Pygments in this guide. I assume you also don't need to use it. But if you want to install it. Just follow Step 7 and 8 [here](http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html).
 
 6. Start Jekyll
-	`jekyll new myblog
-	 cd myblog
-     jekyll serve`
+	`jekyll new myblog`
+	 `cd myblog`
+     	`jekyll serve`
   Then check [http://localhost:4000](http://localhost:4000)
 
 ## Version

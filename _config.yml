@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
@@ -128,3 +130,14 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+
+## Markdown Parser (standard Jekyll argument, extended to special parser)
+markdown: rdiscount
+pandoc:
+  extensions: 
+    - smart
+    - mathjax
+#    - template: 'assets/datauri_template.html'   # Use with 'self-contained' to avoid header text in body
+#    - self-contained                             # Archive images in posts as URIs.  Very slow, for archiving only.  
+#    - mathml                                     # Use mathml for equations (Archival, HTML5/XML valid syntax)
+

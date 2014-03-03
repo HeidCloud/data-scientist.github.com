@@ -45,15 +45,9 @@ desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
-  #title = (ENV["title"] || "new-post").encode "utf-8"
   tags = ENV["tags"] || "[]"
   category = ENV["category"] || ""
-  # slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  # \u0391-\uFFE5 better than \u4e00-\u9fa5
-  # slug = title.downcase.strip.gsub(' ', '-').gsub(/[^0-9a-zA-Z\u0391-\uFFE5-]/, '').encode 'GBK'
-  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^0-9a-zA-Z\u0391-\uFFE5-]/, '')
-
-
+  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
   rescue => e

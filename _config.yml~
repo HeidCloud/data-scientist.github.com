@@ -132,8 +132,8 @@ JB :
   
 
 ## Markdown Parser (standard Jekyll argument, extended to special parser)
-markdown: rdiscount
-#markdown: pandoc
+#markdown: rdiscount
+markdown: pandoc
 pandoc:
   extensions: 
     - smart

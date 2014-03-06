@@ -30,7 +30,7 @@ plot(cars)
 
 先给出一个行内Latex公式到例子，$ChooseMove：B \to M$，然后看一个段间到例子：
 
-```{latex}
+```{r eval=FALSE}
 \tao = \miu
 ```
 
@@ -43,3 +43,12 @@ V(b) =
 V(b'), & \text{$b'$ 是从 $b$ 开始双方都采取最有对弈后可到达的终局}
 \end{cases}
 $$
+
+
+Does **knitr** work with Python? Use the chunk option `engine='python'`:
+
+```{r test-python, engine='python'}
+x = 'hello, python world!'
+print x
+print x.split(' ')
+```

@@ -16,7 +16,7 @@ When you click the **Knit HTML** button a web page will be generated that includ
 
 
 
-{% highlight r %}
+{% highlight s %}
 summary(cars)
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ summary(cars)
 You can also embed plots, for example:
 
 
-{% highlight r %}
+{% highlight s %}
 plot(cars)
 {% endhighlight %}
 
@@ -48,9 +48,11 @@ plot(cars)
 
 先给出一个行内Latex公式到例子，$ChooseMove：B \to M$，然后看一个段间到例子：
 
-{% highlight latex %}
+
+{% highlight s %}
 \tao = \miu
 {% endhighlight %}
+
 
 $$
 V(b) = 
@@ -61,3 +63,22 @@ V(b) =
 V(b'), & \text{$b'$ 是从 $b$ 开始双方都采取最有对弈后可到达的终局}
 \end{cases}
 $$
+
+
+Does **knitr** work with Python? Use the chunk option `engine='python'`:
+
+
+{% highlight python %}
+x = 'hello, python world!'
+print x
+print x.split(' ')
+{% endhighlight %}
+
+
+
+
+{% highlight text %}
+## hello, python world!
+## ['hello,', 'python', 'world!']
+{% endhighlight %}
+

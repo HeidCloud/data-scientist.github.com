@@ -132,12 +132,20 @@ JB :
   
 
 ## Markdown Parser (standard Jekyll argument, extended to special parser)
-markdown: rdiscount
+
+markdown: kramdown
+
+#markdown: redcarpet
+#markdown: maruku
+#markdown:  rdiscount
+#pandoc:  true
+
 #markdown: pandoc
-pandoc:
-  extensions: 
-    - smart
-    - mathjax
+#pandoc:
+#  extensions: 
+#    - smart
+#    - mathjax
+
 #    - template: 'assets/datauri_template.html'   # Use with 'self-contained' to avoid header text in body
 #    - self-contained                             # Archive images in posts as URIs.  Very slow, for archiving only.  
 #    - mathml                                     # Use mathml for equations (Archival, HTML5/XML valid syntax)

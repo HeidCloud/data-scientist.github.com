@@ -4,6 +4,13 @@
      待写
 ##二、项目环境配置##
 ###2.1、开发工具介绍###
+- [R](http://www.r-project.org/ "R")
+- [Rstudio](https://www.rstudio.com/ "rstudio")
+- [Git](http://git-scm.com/docs "Git")
+- [jekyll](http://jekyllrb.com/ "jekyll")
+- [latex](http://www.latex-project.org/ "latex")
+- [Ruby](https://www.ruby-lang.org/zh_cn/ "Ruby")
+- [rubygems](http://rubygems.org/ "rubygems")
 ###2.2、安装Linux操作系统###
 ###2.3、安装Ruby环境###
 ###2.4、安装jekyll###

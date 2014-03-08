@@ -12,9 +12,9 @@
 - [Ruby](https://www.ruby-lang.org/zh_cn/ "Ruby")
 - [rubygems](http://rubygems.org/ "rubygems")  
 
-###2.2、安装Linux操作系统###  
+###2.2、安装Linux操作系统###
      CentOS6.5_64bit  
-###2.3、安装Ruby环境###  
+###2.3、安装Ruby环境###
      1、安装系统相关依赖包  
      yum install gcc-c++ patch readline readline-devel zlib zlib-devel 
      yum install libyaml-devel libffi-devel openssl-devel make 
@@ -42,7 +42,7 @@
      12、本地访问项目
      http://youIp:4000(访问前最好关闭防火墙)    
      
-###2.4、安装jekyll###  
-###2.5、Git常用方法###  
-##三、项目开发流程##  
-##四、项目参与方法##  
+###2.4、安装jekyll###
+###2.5、Git常用方法### 
+##三、项目开发流程##
+##四、项目参与方法## 

@@ -13,7 +13,7 @@
 - [rubygems](http://rubygems.org/ "rubygems")  
 ###2.2、安装Linux操作系统###
      CentOS6.5_64bit
-###2.3、安装Ruby环境###
+###2.3、安装Ruby环境###  
      1、安装系统相关依赖包
      yum install gcc-c++ patch readline readline-devel zlib zlib-devel 
      yum install libyaml-devel libffi-devel openssl-devel make 

@@ -43,5 +43,20 @@
      http://youIp:4000(访问前最好关闭防火墙)    
      
 ###2.4、Git常用方法###
+     // 先checkout master （如果没做过这一步）
+     git clone <git-repos-url> (如<git@...>或者<https://...>)
+
+     // checkout branch：
+     git checkout <branch-name>
+     git add <dir> or <files>  （如有新增目录或文件）
+     git ci -a
+     （弹出vi，写comment，wq退出）
+     git push
+
+     // 合并 
+     git checkout <master-name>
+     git branches  （查看有哪些branch）
+     git merge <branch-name>
+
 ##三、项目开发流程##
 ##四、项目参与方法##

@@ -63,14 +63,14 @@
      rpm -ivh rstudio-0.98.501-x86_64.rpm 安装IDE
 
      
-##一、Windows开发环境配置##
+##二、Windows开发环境配置##
 	python2.7
 	ruby
 	R
 	rstuio
 	jekyll
 	
-##二、安装注意事项##
+##三、安装注意事项##
       1. Rmd文件(通过脚本)KnitPost.R生成md文件，默认在根目录，无法自动到_post文件下
       2. 关于pygments高亮的问题							
       3. pygments版本问题	pygments 0.5.0/0.5.4才行，建议用Gemfile, 然后bundle install, bundle exec jekyll          serve来运行						

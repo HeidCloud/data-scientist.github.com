@@ -64,22 +64,27 @@
 
      
 ##一、Windows开发环境配置##
-
+	python2.7
+	ruby
+	R
+	rstuio
+	jekyll
+	
 ##二、安装注意事项##
       1. Rmd文件(通过脚本)KnitPost.R生成md文件，默认在根目录，无法自动到_post文件下
       2. 关于pygments高亮的问题							
-      2.1 pygments版本问题	pygments 0.5.0/0.5.4才行，建议用Gemfile, 然后bundle install, bundle exec jekyll          serve来运行						
-      2.2 css位置	生成的css在我的环境下只能放项目根目录下才起作用 pygmentize -S default -f html > pygments.css
+      3. pygments版本问题	pygments 0.5.0/0.5.4才行，建议用Gemfile, 然后bundle install, bundle exec jekyll          serve来运行						
+      4. css位置	生成的css在我的环境下只能放项目根目录下才起作用 pygmentize -S default -f html > pygments.css
        <head>						
 	  <link rel="stylesheet" href="/pygments.css">					
-      2.3 {% highlight language %} 和 {% endhighlight %}	r高亮不能，需要改为s才行				
+      5. {% highlight language %} 和 {% endhighlight %}	r高亮不能，需要改为s才行				
        建议rstudio写rmd还是用```{r}，生成的md文件改为s就好了。Latex代码不会自动改```为%highlight%，这个也要手动添加						
 								
-      3. 关于Rstudio——>jekyll的过程							
-        3.1	Rstudio打开Rproj						
-        3.2	source("_posts/KnitPost.R")						
-        3.3	KnitPost("_drafts/2014-03-03-RmdTest.Rmd")						
-        3.4	将根目录下的2014-03-03-RmdTest.md拷贝到_post文件夹（注意如果用rstudio编译预览过，_draft下会生成html，md，                figure，不要理会。_draft下保存rmd文件，其余可删）	   
-        3.5	修改2014-03-03-RmdTest.md中的highlight部分						
-        3.6	bundle exec jekyll serve						
+      6 关于Rstudio——>jekyll的过程							
+      7.Rstudio打开Rproj						
+      8.source("_posts/KnitPost.R")						
+      9.KnitPost("_drafts/2014-03-03-RmdTest.Rmd")						
+      10.将根目录下的2014-03-03-RmdTest.md拷贝到_post文件夹（注意如果用rstudio编译预览过，_draft下会生成html，md，                figure，不要理会。_draft下保存rmd文件，其余可删）	   
+      11.修改2014-03-03-RmdTest.md中的highlight部分						
+      12.bundle exec jekyll serve						
 

@@ -58,5 +58,11 @@
      git branches  （查看有哪些branch）
      git merge <branch-name>
 
+###2.5、安装R环境###
+     rpm -Uvh http://mirror01.idc.hinet.net/EPEL/6/i386/epel-release-6-7.noarch.rpm  下载库
+     yum search r-project 搜索R
+     yum install R.x86_64 R-devel.x86_64 R-java.x86_64 安装R
+     下载rstudio-0.98.501-x86_64.rpm IDE rpm
+     rpm -ivh rstudio-0.98.501-x86_64.rpm 安装IDE
 ##三、项目开发流程##
 ##四、项目参与方法##

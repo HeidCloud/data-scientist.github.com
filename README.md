@@ -64,22 +64,20 @@
 
      
 ##二、Windows开发环境配置##
-	python2.7
-	ruby
-	R
-	rstuio
-	jekyll
+	python：下载python-2.7.3.msi
+	ruby：下载rubyinstaller-1.9.3-p374.exe
+	R：下载R-3.0.2-win.exe
+	rstuio：下载RStudio-0.98.501.exe
+	jekyll：下载jekyll 1.4.2
 	
 ##三、安装注意事项##
       1. Rmd文件(通过脚本)KnitPost.R生成md文件，默认在根目录，无法自动到_post文件下
       2. 关于pygments高亮的问题							
       3. pygments版本问题	pygments 0.5.0/0.5.4才行，建议用Gemfile, 然后bundle install, bundle exec jekyll          serve来运行						
-      4. css位置	生成的css在我的环境下只能放项目根目录下才起作用 pygmentize -S default -f html > pygments.css
-       <head>						
-	  <link rel="stylesheet" href="/pygments.css">					
+      4. css位置:生成的css在我的环境下只能放项目根目录下才起作用 pygmentize -S default -f html > pygments.css
+       <head><link rel="stylesheet" href="/pygments.css"></head>					
       5. {% highlight language %} 和 {% endhighlight %}	r高亮不能，需要改为s才行				
-       建议rstudio写rmd还是用```{r}，生成的md文件改为s就好了。Latex代码不会自动改```为%highlight%，这个也要手动添加						
-								
+         建议rstudio写rmd还是用```{r}，生成的md文件改为s就好了。Latex代码不会自动改```为%highlight%，这个也要手动添加							
       6 关于Rstudio——>jekyll的过程							
       7.Rstudio打开Rproj						
       8.source("_posts/KnitPost.R")						

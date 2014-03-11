@@ -1,9 +1,6 @@
-#Data-Scientist 项目引导#
-
-##一、项目简介##
-     待写
-##二、项目环境配置##
-###2.1、开发工具介绍###
+#Data-Scientis#
+##一、LInux开发环境配置##
+###1.1、开发工具介绍###
 - [R](http://www.r-project.org/ "R")
 - [Rstudio](https://www.rstudio.com/ "rstudio")
 - [Git](http://git-scm.com/docs "Git")
@@ -12,9 +9,9 @@
 - [Ruby](https://www.ruby-lang.org/zh_cn/ "Ruby")
 - [rubygems](http://rubygems.org/ "rubygems")  
 
-###2.2、安装Linux操作系统###
+###1.2、安装Linux操作系统###
      CentOS6.5_64bit  
-###2.3、安装Ruby环境###
+###1.3、安装Ruby环境###
      1、安装系统相关依赖包  
      yum install gcc-c++ patch readline readline-devel zlib zlib-devel 
      yum install libyaml-devel libffi-devel openssl-devel make 
@@ -42,7 +39,7 @@
      12、本地访问项目
      http://youIp:4000(访问前最好关闭防火墙)    
      
-###2.4、Git常用方法###
+###1.4、Git常用方法###
      // 先checkout master （如果没做过这一步）
      git clone <git-repos-url> (如<git@...>或者<https://...>)
 
@@ -58,11 +55,31 @@
      git branches  （查看有哪些branch）
      git merge <branch-name>
 
-###2.5、安装R环境###
+###1.5、安装R环境###
      rpm -Uvh http://mirror01.idc.hinet.net/EPEL/6/i386/epel-release-6-7.noarch.rpm  下载库
      yum search r-project 搜索R
      yum install R.x86_64 R-devel.x86_64 R-java.x86_64 安装R
      下载rstudio-0.98.501-x86_64.rpm IDE rpm
      rpm -ivh rstudio-0.98.501-x86_64.rpm 安装IDE
-##三、项目开发流程##
-##四、项目参与方法##
+
+     
+##一、Windows开发环境配置##
+
+##二、安装注意事项##
+      1. Rmd文件(通过脚本)KnitPost.R生成md文件，默认在根目录，无法自动到_post文件下
+      2. 关于pygments高亮的问题							
+      2.1 pygments版本问题	pygments 0.5.0/0.5.4才行，建议用Gemfile, 然后bundle install, bundle exec jekyll          serve来运行						
+      2.2 css位置	生成的css在我的环境下只能放项目根目录下才起作用 pygmentize -S default -f html > pygments.css
+       <head>						
+	  <link rel="stylesheet" href="/pygments.css">					
+      2.3 {% highlight language %} 和 {% endhighlight %}	r高亮不能，需要改为s才行				
+       建议rstudio写rmd还是用```{r}，生成的md文件改为s就好了。Latex代码不会自动改```为%highlight%，这个也要手动添加						
+								
+      3. 关于Rstudio——>jekyll的过程							
+        3.1	Rstudio打开Rproj						
+        3.2	source("_posts/KnitPost.R")						
+        3.3	KnitPost("_drafts/2014-03-03-RmdTest.Rmd")						
+        3.4	将根目录下的2014-03-03-RmdTest.md拷贝到_post文件夹（注意如果用rstudio编译预览过，_draft下会生成html，md，                figure，不要理会。_draft下保存rmd文件，其余可删）	   
+        3.5	修改2014-03-03-RmdTest.md中的highlight部分						
+        3.6	bundle exec jekyll serve						
+
